@@ -2,7 +2,7 @@
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-const { applyRules } = require("./temp_ruleengine/engine/applyRules");
+const { applyRules } = require("./ruleengine/engine/applyRules");
 
 require("dotenv").config();
 
