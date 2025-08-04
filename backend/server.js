@@ -10,7 +10,7 @@ const app = express();
 const PORT = 3000;
 const API_KEY = process.env.API_KEY;
 
-app.use(cors());
+//app.use(cors()); Nur bei lokaler runtime wieder einfügen
 app.use(bodyParser.json());
 
 app.post("/bewerten", (req, res) => {
