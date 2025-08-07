@@ -1,0 +1,143 @@
+{
+  "Schornstein": [
+    {
+      "material": [
+        "kaminabdeckung",
+        "kamin abdeckung",
+        "kaminhaube",
+        "v2a abdeckung"
+      ],
+      "max": 250,
+      "hinweis": "Preis für Kaminabdeckung liegt über dem marktüblichen Wert."
+    },
+    {
+      "material": [
+        "faserzement",
+        "faser zement",
+        "fz-platte",
+        "faserzementplatte"
+      ],
+      "max": 120,
+      "hinweis": "Preis für Faserzementplatten liegt über dem marktüblichen Wert."
+    },
+    {
+      "material": [
+        "walzblei",
+        "bleieinfassung",
+        "blei einfassen"
+      ],
+      "max": 65,
+      "hinweis": "Preis für Walzblei-Einfassung liegt über dem marktüblichen Wert."
+    }
+  ],
+  "Klimaanlage": [
+    {
+      "material": [
+        "kupferrohr",
+        "isoliertes twinrohr",
+        "kältemittel r32",
+        "r32"
+      ],
+      "max": 80,
+      "hinweis": "Preis für Klimaanlagen-Rohrmaterial liegt über dem marktüblichen Wert."
+    },
+    {
+      "material": [
+        "hisense",
+        "inneneinheit",
+        "außeneinheit",
+        "multisplit"
+      ],
+      "max": 3000,
+      "hinweis": "Preis für Klimageräte liegt über dem marktüblichen Wert."
+    }
+  ],
+  "Fußbodenheizung": [
+    {
+      "material": [
+        "fräsen",
+        "fräsen fußbodenheizung",
+        "estrich fräsen"
+      ],
+      "max": 60,
+      "hinweis": "Preis für Fräsarbeiten liegt über dem marktüblichen Wert."
+    },
+    {
+      "material": [
+        "vaillant",
+        "mischermodul",
+        "vr 71"
+      ],
+      "max": 500,
+      "hinweis": "Preis für Mischermodul liegt über dem marktüblichen Wert."
+    },
+    {
+      "material": [
+        "grundfos",
+        "umwälzpumpe"
+      ],
+      "max": 400,
+      "hinweis": "Preis für Umwälzpumpe liegt über dem marktüblichen Wert."
+    }
+  ],
+  "Renovierung": [
+    {
+      "material": [
+        "scheibenputz",
+        "mineralischer scheibenputz",
+        "putzarbeiten"
+      ],
+      "max": 18,
+      "hinweis": "Preis für Putzarbeiten liegt über dem marktüblichen Wert."
+    },
+    {
+      "material": [
+        "vinyl",
+        "vinylboden",
+        "premium vinyl"
+      ],
+      "max": 27,
+      "hinweis": "Preis für Vinylboden liegt über dem marktüblichen Wert."
+    },
+    {
+      "material": [
+        "malerarbeiten",
+        "streichen",
+        "anstrich",
+        "wand streichen",
+        "decke streichen"
+      ],
+      "max": 10,
+      "hinweis": "Preis für Malerarbeiten liegt über dem marktüblichen Wert."
+    }
+  ],
+  "Pflasterarbeiten": [
+    {
+      "material": [
+        "granitpflaster",
+        "pflaster",
+        "pflastersteine",
+        "pflasterarbeiten"
+      ],
+      "max": 140,
+      "hinweis": "Preis für Pflasterarbeiten liegt über dem marktüblichen Wert."
+    },
+    {
+      "material": [
+        "entwässerungsrinne",
+        "mea-entwässerungsrinne"
+      ],
+      "max": 200,
+      "hinweis": "Preis für Entwässerungsrinne liegt über dem marktüblichen Wert."
+    },
+    {
+      "material": [
+        "tragschicht",
+        "tragschicht betonmineralgemisch",
+        "tragschicht kies-sand"
+      ],
+      "max": 40,
+      "hinweis": "Preis für Tragschicht liegt über dem marktüblichen Wert."
+    }
+  ]
+}

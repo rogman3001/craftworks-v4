@@ -1,0 +1,89 @@
+{
+  "version": "v5",
+  "regeln": [
+    {
+      "id": "SCHORNSTEIN_KAMINABDECKUNG_TEUER",
+      "bereich": "Schornstein",
+      "suchwoerter": [
+        "Kaminabdeckung",
+        "Schornsteinkopfabdeckung",
+        "Schornsteinhaube"
+      ],
+      "einheitspreisSchwelle": 200,
+      "bewertung": "negativ",
+      "beschreibung": "Preis für Kaminabdeckung liegt über dem marktüblichen Wert.",
+      "textbaustein": "Die Kosten für die Kaminabdeckung erscheinen überdurchschnittlich hoch."
+    },
+    {
+      "id": "KLIMA_MATERIAL_PAUSCHAL_OK",
+      "bereich": "Klimaanlage",
+      "suchwoerter": [
+        "Kupferrohr",
+        "Kältemittel",
+        "Kondensatschlauch",
+        "Werkzeugpauschale"
+      ],
+      "einheitspreisSchwelle": 0,
+      "bewertung": "neutral",
+      "beschreibung": "Materialpauschalen im üblichen Rahmen.",
+      "textbaustein": "Die angesetzten Materialpauschalen erscheinen marktüblich."
+    },
+    {
+      "id": "KLIMA_MEHRERE_INNENEINHEITEN",
+      "bereich": "Klimaanlage",
+      "suchwoerter": [
+        "Inneneinheit",
+        "Multisplit"
+      ],
+      "mengeSchwelle": 2,
+      "bewertung": "positiv",
+      "beschreibung": "Angebot enthält mehrere Inneneinheiten – typischer für größere Klimaanlagenlösungen.",
+      "textbaustein": "Das Angebot berücksichtigt mehrere Inneneinheiten, was für umfassende Klimatisierung spricht."
+    },
+    {
+      "id": "FBH_MONTAGE_STD_TEUER",
+      "bereich": "Fußbodenheizung",
+      "suchwoerter": [
+        "Monteurstunde",
+        "Montagestunde",
+        "Helferstunde"
+      ],
+      "einheitspreisSchwelle": 65,
+      "bewertung": "negativ",
+      "beschreibung": "Montagestundensätze liegen über dem durchschnittlichen Handwerkspreis.",
+      "textbaustein": "Die angesetzten Stundensätze für Monteure oder Helfer erscheinen überdurchschnittlich."
+    },
+    {
+      "id": "RENOVIERUNG_MATERIAL_TRANSPARENT",
+      "bereich": "Renovierung",
+      "suchwoerter": [
+        "Vinyl",
+        "Sockelleisten",
+        "Scheibenputz",
+        "Abdeckung"
+      ],
+      "bewertung": "positiv",
+      "beschreibung": "Materialpositionen sind transparent aufgeschlüsselt.",
+      "textbaustein": "Das Angebot ist hinsichtlich der Materialkosten sehr transparent."
+    },
+    {
+      "id": "PFLASTER_MOBILTOILETTE_INKLUSIVE",
+      "bereich": "Pflasterarbeiten",
+      "suchwoerter": [
+        "Mobiltoilette",
+        "Baustelleneinrichtung"
+      ],
+      "bewertung": "neutral",
+      "beschreibung": "Baustelleneinrichtung inklusive, was bei Außenarbeiten üblich ist.",
+      "textbaustein": "Die üblichen Baustelleneinrichtungskosten sind berücksichtigt."
+    },
+    {
+      "id": "POSITION_OHNE_PREIS",
+      "bereich": "Allgemein",
+      "suchwoerter": [],
+      "bewertung": "negativ",
+      "beschreibung": "Eine oder mehrere Positionen enthalten keinen Preis.",
+      "textbaustein": "Einige Positionen im Angebot sind unvollständig (z. B. ohne Preisangabe)."
+    }
+  ]
+}

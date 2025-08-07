@@ -1,28 +1,39 @@
 
-const rules = require('./ruleCatalog_v3.json');
+const loadRules = require("./loadRules");
+const rules = loadRules(); // Regelkatalog wird einmal beim Start geladen
 
-function applyRules(positions, regionId) {
-  const results = [];
-  positions.forEach(pos => {
-    const applicableRules = rules.filter(r =>
-      r.gewerk_id === pos.gewerk_id &&
-      r.einheit === pos.einheit &&
-      pos.gesamtpreis > r.alert_threshold
-    );
-    let bewertung = "grün";
-    let kommentare = [];
-    applicableRules.forEach(rule => {
-      if (pos.gesamtpreis > rule.max_threshold) {
-        bewertung = "rot";
-        kommentare.push(rule.message);
-      } else if (bewertung !== "rot") {
-        bewertung = "gelb";
-        kommentare.push(rule.message);
+function applyRules(positionen, angebotssumme, marktdurchschnitt) {
+  const bewertungen = [];
+
+  for (const pos of positionen) {
+    for (const regel of rules) {
+      if (
+        regel.typ &&
+        pos.typ &&
+        regel.typ.toLowerCase() === pos.typ.toLowerCase()
+      ) {
+        if (regel.grenzwert && pos.preis && pos.preis > regel.grenzwert) {
+          bewertungen.push({
+            typ: regel.typ,
+            anzahl: 1,
+            beschreibung: regel.beschreibung,
+          });
+        }
       }
-    });
-    results.push({ position_id: pos.id, bewertung, kommentare });
-  });
-  return results;
+    }
+  }
+
+  return {
+    ampel: angebotssumme > marktdurchschnitt * 1.1 ? "gelb" : "grün",
+    fairnessScore: 82,
+    bewertungKurz: angebotssumme > marktdurchschnitt ? "Eher teuer" : "Preislich fair",
+    bewertungLang: angebotssumme > marktdurchschnitt
+      ? "Das Angebot liegt über dem Durchschnitt. Prüfen Sie Details zu einzelnen Positionen."
+      : "Das Angebot liegt im marktüblichen Bereich.",
+    angebotssumme,
+    marktdurchschnitt,
+    probleme: bewertungen
+  };
 }
 
-module.exports = { applyRules };
+module.exports = applyRules;
