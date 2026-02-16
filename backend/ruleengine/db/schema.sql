@@ -1,5 +1,5 @@
 
-CREATE TABLE offers (
+CREATE TABLE IF NOT EXISTS offers (
     id SERIAL PRIMARY KEY,
     upload_date TIMESTAMP DEFAULT NOW(),
     is_anonymized BOOLEAN DEFAULT TRUE,
@@ -7,7 +7,7 @@ CREATE TABLE offers (
     anonymized_metadata JSONB
 );
 
-CREATE TABLE positions (
+CREATE TABLE IF NOT EXISTS positions (
     id SERIAL PRIMARY KEY,
     offer_id INTEGER REFERENCES offers(id),
     gewerk_id INTEGER,
@@ -16,7 +16,7 @@ CREATE TABLE positions (
     gesamtpreis NUMERIC
 );
 
-CREATE TABLE rules (
+CREATE TABLE IF NOT EXISTS rules (
     rule_id TEXT PRIMARY KEY,
     gewerk_id INTEGER,
     einheit TEXT,
@@ -25,7 +25,7 @@ CREATE TABLE rules (
     message TEXT
 );
 
-CREATE TABLE price_benchmarks (
+CREATE TABLE IF NOT EXISTS price_benchmarks (
     gewerk_id INTEGER,
     region_id INTEGER,
     art TEXT,
