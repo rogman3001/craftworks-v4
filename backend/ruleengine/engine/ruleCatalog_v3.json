@@ -1,26 +1,370 @@
 [
   {
+    "rule_id": "maler_innenwand_high",
+    "gewerk_id": 1,
+    "einheit": "€/m2",
+    "max_threshold": 18,
+    "alert_threshold": 12,
+    "message": "Innenwand streichen über Marktbereich (>18 €/m²)"
+  },
+  {
+    "rule_id": "maler_fassade_high",
+    "gewerk_id": 1,
+    "einheit": "€/m2",
+    "max_threshold": 40,
+    "alert_threshold": 28,
+    "message": "Fassadenanstrich über Marktbereich (>40 €/m²)"
+  },
+  {
+    "rule_id": "maler_tapezieren_high",
+    "gewerk_id": 1,
+    "einheit": "€/m2",
+    "max_threshold": 25,
+    "alert_threshold": 16,
+    "message": "Tapezierarbeiten über Marktbereich (>25 €/m²)"
+  },
+  {
+    "rule_id": "boden_laminat_high",
+    "gewerk_id": 2,
+    "einheit": "€/m2",
+    "max_threshold": 60,
+    "alert_threshold": 40,
+    "message": "Laminatverlegung über Marktbereich (>60 €/m²)"
+  },
+  {
+    "rule_id": "boden_parkett_high",
+    "gewerk_id": 2,
+    "einheit": "€/m2",
+    "max_threshold": 120,
+    "alert_threshold": 80,
+    "message": "Parkettverlegung über Marktbereich (>120 €/m²)"
+  },
+  {
+    "rule_id": "boden_vinyl_high",
+    "gewerk_id": 2,
+    "einheit": "€/m2",
+    "max_threshold": 50,
+    "alert_threshold": 35,
+    "message": "Vinylboden verlegen über Marktbereich (>50 €/m²)"
+  },
+  {
     "rule_id": "elektro_steckdose_high",
     "gewerk_id": 3,
-    "einheit": "\u20ac/Stk",
+    "einheit": "€/Stk",
     "max_threshold": 150,
     "alert_threshold": 100,
-    "message": "Steckdosenpreis \u00fcber Marktbereich (>150\u202f\u20ac)"
+    "message": "Steckdosenpreis über Marktbereich (>150 €)"
+  },
+  {
+    "rule_id": "elektro_lichtschalter_high",
+    "gewerk_id": 3,
+    "einheit": "€/Stk",
+    "max_threshold": 90,
+    "alert_threshold": 60,
+    "message": "Lichtschalterpreis über Marktbereich (>90 €)"
+  },
+  {
+    "rule_id": "elektro_sicherungskasten_high",
+    "gewerk_id": 3,
+    "einheit": "€/Stk",
+    "max_threshold": 1200,
+    "alert_threshold": 800,
+    "message": "Sicherungskasten über Marktbereich (>1.200 €)"
+  },
+  {
+    "rule_id": "elektro_installation_high",
+    "gewerk_id": 3,
+    "einheit": "€/m2",
+    "max_threshold": 120,
+    "alert_threshold": 80,
+    "message": "Elektroinstallation pro m² über Marktbereich (>120 €/m²)"
   },
   {
     "rule_id": "klima_monosplit_high",
     "gewerk_id": 4,
-    "einheit": "\u20ac/Stk",
+    "einheit": "€/Stk",
     "max_threshold": 5000,
     "alert_threshold": 4000,
-    "message": "Klimaanlagenpreis hoch (>5000\u202f\u20ac)"
+    "message": "Klimaanlagenpreis hoch (>5.000 €)"
+  },
+  {
+    "rule_id": "klima_multisplit_high",
+    "gewerk_id": 4,
+    "einheit": "€/Stk",
+    "max_threshold": 10000,
+    "alert_threshold": 7000,
+    "message": "Multisplit-Klimaanlage über Marktbereich (>10.000 €)"
   },
   {
     "rule_id": "sanitaer_badsanierung_high",
     "gewerk_id": 5,
-    "einheit": "\u20ac/m2",
+    "einheit": "€/m2",
     "max_threshold": 3500,
     "alert_threshold": 2500,
-    "message": "Badsanierung pro m\u00b2 \u00fcber Marktdurchschnitt"
+    "message": "Badsanierung pro m² über Marktdurchschnitt"
+  },
+  {
+    "rule_id": "sanitaer_wc_high",
+    "gewerk_id": 5,
+    "einheit": "€/Stk",
+    "max_threshold": 900,
+    "alert_threshold": 600,
+    "message": "WC-Installation über Marktbereich (>900 €)"
+  },
+  {
+    "rule_id": "sanitaer_waschbecken_high",
+    "gewerk_id": 5,
+    "einheit": "€/Stk",
+    "max_threshold": 650,
+    "alert_threshold": 400,
+    "message": "Waschbecken-Installation über Marktbereich (>650 €)"
+  },
+  {
+    "rule_id": "sanitaer_dusche_high",
+    "gewerk_id": 5,
+    "einheit": "€/Stk",
+    "max_threshold": 2500,
+    "alert_threshold": 1500,
+    "message": "Duscheinbau über Marktbereich (>2.500 €)"
+  },
+  {
+    "rule_id": "heizung_gasheizung_high",
+    "gewerk_id": 6,
+    "einheit": "€/Stk",
+    "max_threshold": 9000,
+    "alert_threshold": 6000,
+    "message": "Gasheizung über Marktbereich (>9.000 €)"
+  },
+  {
+    "rule_id": "heizung_waermepumpe_high",
+    "gewerk_id": 6,
+    "einheit": "€/Stk",
+    "max_threshold": 22000,
+    "alert_threshold": 15000,
+    "message": "Wärmepumpe über Marktbereich (>22.000 €)"
+  },
+  {
+    "rule_id": "heizung_heizkoerper_high",
+    "gewerk_id": 6,
+    "einheit": "€/Stk",
+    "max_threshold": 700,
+    "alert_threshold": 400,
+    "message": "Heizkörper über Marktbereich (>700 €)"
+  },
+  {
+    "rule_id": "heizung_fussbodenheizung_high",
+    "gewerk_id": 6,
+    "einheit": "€/m2",
+    "max_threshold": 80,
+    "alert_threshold": 50,
+    "message": "Fußbodenheizung über Marktbereich (>80 €/m²)"
+  },
+  {
+    "rule_id": "dach_ziegel_high",
+    "gewerk_id": 7,
+    "einheit": "€/m2",
+    "max_threshold": 120,
+    "alert_threshold": 80,
+    "message": "Dacheindeckung (Ziegel) über Marktbereich (>120 €/m²)"
+  },
+  {
+    "rule_id": "dach_flachdach_high",
+    "gewerk_id": 7,
+    "einheit": "€/m2",
+    "max_threshold": 90,
+    "alert_threshold": 60,
+    "message": "Flachdachabdichtung über Marktbereich (>90 €/m²)"
+  },
+  {
+    "rule_id": "dach_fenster_high",
+    "gewerk_id": 7,
+    "einheit": "€/Stk",
+    "max_threshold": 1800,
+    "alert_threshold": 1200,
+    "message": "Dachfenster über Marktbereich (>1.800 €)"
+  },
+  {
+    "rule_id": "dach_daemmung_high",
+    "gewerk_id": 7,
+    "einheit": "€/m2",
+    "max_threshold": 100,
+    "alert_threshold": 60,
+    "message": "Dachdämmung über Marktbereich (>100 €/m²)"
+  },
+  {
+    "rule_id": "tischler_innentuer_high",
+    "gewerk_id": 8,
+    "einheit": "€/Stk",
+    "max_threshold": 800,
+    "alert_threshold": 500,
+    "message": "Innentür über Marktbereich (>800 €)"
+  },
+  {
+    "rule_id": "tischler_einbauschrank_high",
+    "gewerk_id": 8,
+    "einheit": "€/Stk",
+    "max_threshold": 4000,
+    "alert_threshold": 2500,
+    "message": "Einbauschrank (maßgefertigt) über Marktbereich (>4.000 €)"
+  },
+  {
+    "rule_id": "tischler_treppe_high",
+    "gewerk_id": 8,
+    "einheit": "€/Stk",
+    "max_threshold": 5000,
+    "alert_threshold": 3000,
+    "message": "Holztreppe über Marktbereich (>5.000 €)"
+  },
+  {
+    "rule_id": "trockenbau_wand_high",
+    "gewerk_id": 9,
+    "einheit": "€/m2",
+    "max_threshold": 80,
+    "alert_threshold": 50,
+    "message": "Trockenbauwand über Marktbereich (>80 €/m²)"
+  },
+  {
+    "rule_id": "trockenbau_decke_high",
+    "gewerk_id": 9,
+    "einheit": "€/m2",
+    "max_threshold": 90,
+    "alert_threshold": 60,
+    "message": "Abhangdecke über Marktbereich (>90 €/m²)"
+  },
+  {
+    "rule_id": "trockenbau_daemmung_high",
+    "gewerk_id": 9,
+    "einheit": "€/m2",
+    "max_threshold": 50,
+    "alert_threshold": 30,
+    "message": "Dämmung (Trockenbau) über Marktbereich (>50 €/m²)"
+  },
+  {
+    "rule_id": "fliesen_wand_high",
+    "gewerk_id": 10,
+    "einheit": "€/m2",
+    "max_threshold": 85,
+    "alert_threshold": 55,
+    "message": "Wandfliesen über Marktbereich (>85 €/m²)"
+  },
+  {
+    "rule_id": "fliesen_boden_high",
+    "gewerk_id": 10,
+    "einheit": "€/m2",
+    "max_threshold": 90,
+    "alert_threshold": 60,
+    "message": "Bodenfliesen über Marktbereich (>90 €/m²)"
+  },
+  {
+    "rule_id": "fliesen_mosaik_high",
+    "gewerk_id": 10,
+    "einheit": "€/m2",
+    "max_threshold": 150,
+    "alert_threshold": 100,
+    "message": "Mosaikfliesen über Marktbereich (>150 €/m²)"
+  },
+  {
+    "rule_id": "fenster_kunststoff_high",
+    "gewerk_id": 11,
+    "einheit": "€/Stk",
+    "max_threshold": 800,
+    "alert_threshold": 500,
+    "message": "Kunststofffenster über Marktbereich (>800 €)"
+  },
+  {
+    "rule_id": "fenster_holz_high",
+    "gewerk_id": 11,
+    "einheit": "€/Stk",
+    "max_threshold": 1200,
+    "alert_threshold": 800,
+    "message": "Holzfenster über Marktbereich (>1.200 €)"
+  },
+  {
+    "rule_id": "fenster_haustuer_high",
+    "gewerk_id": 11,
+    "einheit": "€/Stk",
+    "max_threshold": 3500,
+    "alert_threshold": 2000,
+    "message": "Haustür über Marktbereich (>3.500 €)"
+  },
+  {
+    "rule_id": "fenster_rolladen_high",
+    "gewerk_id": 11,
+    "einheit": "€/Stk",
+    "max_threshold": 500,
+    "alert_threshold": 300,
+    "message": "Rollläden über Marktbereich (>500 €)"
+  },
+  {
+    "rule_id": "putz_innenputz_high",
+    "gewerk_id": 12,
+    "einheit": "€/m2",
+    "max_threshold": 35,
+    "alert_threshold": 20,
+    "message": "Innenputz über Marktbereich (>35 €/m²)"
+  },
+  {
+    "rule_id": "putz_aussenputz_high",
+    "gewerk_id": 12,
+    "einheit": "€/m2",
+    "max_threshold": 50,
+    "alert_threshold": 30,
+    "message": "Außenputz über Marktbereich (>50 €/m²)"
+  },
+  {
+    "rule_id": "putz_wdvs_high",
+    "gewerk_id": 12,
+    "einheit": "€/m2",
+    "max_threshold": 160,
+    "alert_threshold": 100,
+    "message": "Wärmedämmverbundsystem (WDVS) über Marktbereich (>160 €/m²)"
+  },
+  {
+    "rule_id": "garten_terrasse_high",
+    "gewerk_id": 13,
+    "einheit": "€/m2",
+    "max_threshold": 100,
+    "alert_threshold": 60,
+    "message": "Terrasse pflastern über Marktbereich (>100 €/m²)"
+  },
+  {
+    "rule_id": "garten_zaun_high",
+    "gewerk_id": 13,
+    "einheit": "€/lfm",
+    "max_threshold": 130,
+    "alert_threshold": 80,
+    "message": "Zaunanlage über Marktbereich (>130 €/lfm)"
+  },
+  {
+    "rule_id": "garten_rasen_high",
+    "gewerk_id": 13,
+    "einheit": "€/m2",
+    "max_threshold": 15,
+    "alert_threshold": 8,
+    "message": "Rasenneuanlage über Marktbereich (>15 €/m²)"
+  },
+  {
+    "rule_id": "metall_gelaender_high",
+    "gewerk_id": 14,
+    "einheit": "€/lfm",
+    "max_threshold": 350,
+    "alert_threshold": 200,
+    "message": "Geländer/Balkongeländer über Marktbereich (>350 €/lfm)"
+  },
+  {
+    "rule_id": "metall_carport_high",
+    "gewerk_id": 14,
+    "einheit": "€/Stk",
+    "max_threshold": 5000,
+    "alert_threshold": 3000,
+    "message": "Carport (Stahl) über Marktbereich (>5.000 €)"
+  },
+  {
+    "rule_id": "metall_treppe_high",
+    "gewerk_id": 14,
+    "einheit": "€/Stk",
+    "max_threshold": 7000,
+    "alert_threshold": 4000,
+    "message": "Metalltreppe über Marktbereich (>7.000 €)"
   }
 ]
